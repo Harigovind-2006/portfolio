@@ -1,7 +1,7 @@
 document.getElementById("downloadCV").addEventListener("click", function () {
   const link = document.createElement("a");
-  link.href = "Harigovind_Resume.pdf"; // your CV file name
-  link.download = "Harigovind_Resume.pdf";
+  link.href = "harigovind.pdf"; // your CV file name
+  link.download = "harigovind.pdf";
 
   document.body.appendChild(link);
   link.click();
