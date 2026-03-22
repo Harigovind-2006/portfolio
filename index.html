@@ -3,347 +3,280 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Harigovind M - Pixel Portfolio</title>
-    <!-- Google Fonts for Pixel Art Vibe -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              pixel: ['"Press Start 2P"', 'cursive'],
-              vt323: ['"VT323"', 'monospace'],
-            },
-            colors: {
-              'pixel-blue-light': '#c9e6ff',
-              'pixel-blue-dark': '#4b3eff',
-              'pixel-pink': '#ff9ce2',
-              'pixel-purple': '#8d65ff',
-              'pixel-yellow': '#ffe500',
-              'pixel-sky': '#e8f4ff',
-              'pixel-ground': '#534d85',
-              'pixel-sea': '#38a8ff',
-            },
-            boxShadow: {
-              'pixel': '4px 4px 0 0 rgba(0, 0, 0, 1)',
-              'pixel-sm': '2px 2px 0 0 rgba(0, 0, 0, 1)',
-              'pixel-blue': '4px 4px 0 0 #4b3eff',
-              'pixel-pink': '4px 4px 0 0 #ff9ce2',
-              'pixel-white': '4px 4px 0 0 #ffffff',
-            }
-          }
-        }
-      }
-    </script>
+    <title>Harigovind M | Retro Desktop Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Pixelify+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="bg-pixel-sky text-black font-vt323 text-xl overflow-x-hidden">
-    
-    <!-- Navbar -->
-    <nav class="fixed top-0 w-full bg-white border-b-4 border-black z-50 p-4 shadow-pixel">
-      <div class="max-w-6xl mx-auto flex justify-between items-center">
-        <a href="#home" class="font-pixel text-sm md:text-md text-pixel-blue-dark hover:text-pixel-pink transition-colors">HARI<span class="text-black">GOVIND</span></a>
-        <div class="space-x-4 md:space-x-8 text-lg md:text-xl font-bold">
-          <a href="#about" class="hover:text-pixel-purple transition-colors">ABOUT</a>
-          <a href="#services" class="hover:text-pixel-purple transition-colors">SERVICES</a>
-          <a href="#skills" class="hover:text-pixel-purple transition-colors">SKILLS</a>
-          <a href="#contact" class="hover:text-pixel-purple transition-colors">CONTACT</a>
-        </div>
-      </div>
-    </nav>
-
-    <div class="page-shell pt-16">
-      
-      <!-- HERO SECTION -->
-      <header id="home" class="relative min-h-[85vh] flex flex-col justify-center items-center bg-gradient-to-b from-pixel-blue-light to-white overflow-hidden border-b-4 border-black">
-        <!-- Pixel clouds -->
-        <div class="absolute top-10 left-10 cloud w-24 h-8 bg-white shadow-pixel hidden md:block"></div>
-        <div class="absolute top-20 right-20 cloud w-32 h-10 bg-white shadow-pixel hidden md:block"></div>
-        <div class="absolute top-40 left-1/3 cloud w-16 h-6 bg-white shadow-pixel hidden md:block"></div>
-        
-        <div class="z-10 text-center px-4">
-          <p class="font-pixel text-pixel-purple text-xs md:text-sm mb-4 tracking-widest uppercase">STUDENT DEVELOPER</p>
-          <h1 class="font-pixel text-4xl md:text-6xl text-pixel-blue-dark mb-4 filter drop-shadow-[4px_4px_0_rgba(0,0,0,1)] uppercase">
-            HARIGOVIND
-          </h1>
-          <h2 class="font-pixel text-2xl md:text-4xl text-white filter drop-shadow-[3px_3px_0_rgba(0,0,0,1)] mb-10">
-            PORTFOLIO
-          </h2>
-
-          <a href="#about" class="inline-block bg-pixel-yellow border-4 border-black px-6 py-3 font-pixel text-base shadow-pixel hover:translate-y-1 hover:shadow-pixel-sm transition-all text-black uppercase">
-            START
-          </a>
-        </div>
-
-        <!-- Ground / Cityscape decorative element -->
-        <div class="absolute bottom-0 w-full h-32 bg-pixel-ground border-t-4 border-black flex items-end justify-around px-10">
-          <div class="w-16 h-20 bg-[#403b6e] border-4 border-b-0 border-black shadow-[-4px_0_0_0_rgba(255,156,226,1)]"></div>
-          <div class="w-24 h-32 bg-[#2d294d] border-4 border-b-0 border-black"></div>
-          <div class="w-20 h-16 bg-[#403b6e] border-4 border-b-0 border-black"></div>
-          <div class="w-32 h-24 bg-[#2d294d] border-4 border-b-0 border-black shadow-[4px_0_0_0_rgba(141,101,255,1)]"></div>
-          <div class="w-12 h-12 bg-[#403b6e] border-4 border-b-0 border-black"></div>
-         
-        </div>
-      </header>
-
-      <!-- ABOUT SECTION -->
-      <section id="about" class="py-20 bg-white border-b-4 border-black relative">
-        <div class="max-w-6xl mx-auto px-6">
-          <div class="flex flex-col md:flex-row gap-12 items-center">
-            
-            <div class="flex-1 w-full">
-              <h2 class="font-pixel text-3xl text-pixel-blue-dark mb-2">WELCOME</h2>
-              <p class="font-pixel text-pixel-pink text-4xl mb-8">1.</p>
-              
-              <div class="bg-pixel-sky border-4 border-black shadow-pixel p-1 relative">
-                <!-- Window Header -->
-                <div class="bg-black text-white px-2 py-1 flex items-center justify-between font-pixel text-xs">
-                  <span>ABOUT_ME.exe</span>
-                  <div class="flex space-x-1">
-                    <div class="w-3 h-3 bg-white border-2 border-white"></div>
-                    <div class="w-3 h-3 bg-white border-2 border-white"></div>
-                    <div class="w-3 h-3 bg-white border-2 border-white"></div>
-                  </div>
-                </div>
-                <!-- Window Content -->
-                <div class="bg-white border-2 border-black p-6 mt-1 flex flex-col md:flex-row gap-6 items-center">
-                  <div class="w-32 h-32 md:w-48 md:h-48 flex-shrink-0 border-4 border-black bg-pixel-blue-light flex items-center justify-center overflow-hidden">
-                    <img src="image.png" alt="Harigovind" class="object-cover w-full h-full" onerror="this.src='https://placehold.co/200x200/c9e6ff/000?text=HARI'">
-                  </div>
-                  <div class="text-2xl leading-relaxed">
-                    <h3 class="font-pixel text-lg mb-4 text-pixel-purple">WHO AM I</h3>
-                    <p class="mb-4">
-                      I am a passionate Student Developer with a strong interest in creating attractive and functional websites. I enjoy learning new technologies and improving my skills through projects and practice.
-                    </p>
-                    <p>
-                      I am a passionate developer focused on building responsive web applications using React. I enjoy solving problems and designing clean, intuitive interfaces. I am disciplined, curious, and committed to continuous learning and improvement.
-
-                    </p>
-                    <button id="downloadCV" class="mt-6 bg-pixel-pink border-4 border-black px-6 py-2 font-pixel text-sm shadow-pixel hover:translate-y-1 hover:shadow-pixel-sm transition-all text-white uppercase group">
-                      <span class="inline-block group-hover:animate-bounce">↓</span> Download CV
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-      </section>
-
-      <!-- SKILLS / NUMBERS SECTION -->
-      <section id="skills" class="py-20 bg-[#e8f4ff] border-b-4 border-black relative overflow-hidden">
-        <div class="max-w-6xl mx-auto px-6">
-          <div class="text-center mb-16">
-            <h2 class="font-pixel text-3xl text-pixel-blue-dark mb-4 inline-block relative">
-              <span class="absolute -left-10 text-pixel-pink">♥</span> SKILLS <span class="absolute -right-10 text-pixel-pink">♥</span>
-            </h2>
-          </div>
-
-          <div class="grid grid-cols-2 md:grid-cols-3 gap-8 text-center text-3xl">
-            <!-- Skill 1 -->
-            <div class="flex flex-col items-center group">
-              <p class="font-pixel text-4xl text-pixel-purple mb-2 group-hover:scale-110 transition-transform">98%</p>
-              <div class="font-bold flex items-center justify-center gap-2">
-                <span class="text-xl text-orange-500 font-pixel">{"}</span> HTML
-              </div>
-              <p class="text-gray-500 text-lg">Structure</p>
-            </div>
-            <!-- Skill 2 -->
-            <div class="flex flex-col items-center group">
-              <p class="font-pixel text-4xl text-pixel-blue-dark mb-2 group-hover:scale-110 transition-transform">95%</p>
-              <div class="font-bold flex items-center justify-center gap-2">
-                <span class="text-xl text-blue-500 font-pixel">#</span> CSS & Tailwind
-              </div>
-              <p class="text-gray-500 text-lg">Styling</p>
-            </div>
-            <!-- Skill 3 -->
-            <div class="flex flex-col items-center group">
-              <p class="font-pixel text-4xl text-pixel-pink mb-2 group-hover:scale-110 transition-transform">90%</p>
-              <div class="font-bold flex items-center justify-center gap-2">
-                <span class="text-xl text-yellow-500 font-pixel">JS</span> JavaScript
-              </div>
-              <p class="text-gray-500 text-lg">Logic</p>
-            </div>
-            <!-- Skill 4 -->
-            <div class="flex flex-col items-center group">
-              <p class="font-pixel text-4xl text-black mb-2 group-hover:scale-110 transition-transform">85%</p>
-              <div class="font-bold flex items-center justify-center gap-2">
-                <span class="text-xl text-cyan-500 font-pixel">⚛</span> React.js
-              </div>
-              <p class="text-gray-500 text-lg">Framework</p>
-            </div>
-            <!-- Skill 5 -->
-            <div class="flex flex-col items-center group">
-              <p class="font-pixel text-4xl text-[#534d85] mb-2 group-hover:scale-110 transition-transform">80%</p>
-              <div class="font-bold flex items-center justify-center gap-2">
-                <span class="text-xl text-gray-700 font-pixel">C</span> C Lang
-              </div>
-              <p class="text-gray-500 text-lg">Fundamentals</p>
-            </div>
-            <!-- Skill 6 -->
-            <div class="flex flex-col items-center group">
-              <p class="font-pixel text-4xl text-green-500 mb-2 group-hover:scale-110 transition-transform">92%</p>
-              <div class="font-bold flex items-center justify-center gap-2">
-                <span class="text-xl text-[#3776AB] font-pixel">PY</span> Python
-              </div>
-              <p class="text-gray-500 text-lg">Backend & Scripting</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- SERVICES (CONCEPT) SECTION -->
-      <section id="services" class="py-20 bg-white border-b-4 border-black">
-        <div class="max-w-6xl mx-auto px-6">
-          <h2 class="font-pixel text-3xl text-pixel-blue-dark mb-12 text-center uppercase">Services</h2>
-          
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            
-            <!-- Card 1 -->
-            <div class="bg-white border-4 border-black shadow-pixel-blue p-1 hover:-translate-y-2 transition-transform">
-              <div class="bg-pixel-blue-light border-2 border-black p-6 h-full text-center">
-                <div class="w-16 h-16 mx-auto bg-white border-2 border-black flex items-center justify-center mb-4">
-                  <span class="font-pixel text-lg text-pixel-blue-dark">{ }</span>
-                </div>
-                <h3 class="font-pixel text-sm mb-4">FRONTEND DEV</h3>
-                <p class="text-xl leading-snug text-gray-800">
-                  Building responsive and modern websites using HTML, CSS, JavaScript, and React with clean and maintainable code.
-                </p>
-              </div>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="bg-white border-4 border-black shadow-pixel-pink p-1 hover:-translate-y-2 transition-transform">
-              <div class="bg-pink-100 border-2 border-black p-6 h-full text-center">
-                <div class="w-16 h-16 mx-auto bg-white border-2 border-black flex items-center justify-center mb-4">
-                  <span class="font-pixel text-lg text-pixel-pink">[]</span>
-                </div>
-                <h3 class="font-pixel text-sm mb-4">RESPONSIVE DESIGN</h3>
-                <p class="text-xl leading-snug text-gray-800">
-                  Creating layouts that work smoothly across desktop, tablet, and mobile devices for the best user experience.
-                </p>
-              </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="bg-white border-4 border-black shadow-[4px_4px_0_0_#ffe500] p-1 hover:-translate-y-2 transition-transform">
-              <div class="bg-yellow-100 border-2 border-black p-6 h-full text-center">
-                <div class="w-16 h-16 mx-auto bg-white border-2 border-black flex items-center justify-center mb-4">
-                  <span class="font-pixel text-lg text-yellow-500">*</span>
-                </div>
-                <h3 class="font-pixel text-sm mb-4">UI DEVELOPMENT</h3>
-                <p class="text-xl leading-snug text-gray-800">
-                  Developing attractive and user-friendly interfaces that make websites easy to use and visually appealing.
-                </p>
-              </div>
-            </div>
-
-          </div>
-          
-          <!-- Second row of services -->
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
-            <div class="bg-pixel-ground text-white border-4 border-black shadow-pixel p-6 text-center hover:bg-opacity-90 transition-colors">
-              <h3 class="font-pixel text-sm mb-4 text-pixel-pink">FAST SUPPORT</h3>
-              <p class="text-xl">Quick iteration, direct communication, and practical fixes to keep projects moving.</p>
-            </div>
-            <div class="bg-pixel-purple text-white border-4 border-black shadow-pixel p-6 text-center hover:bg-opacity-90 transition-colors">
-              <h3 class="font-pixel text-sm mb-4 text-pixel-yellow">CLEAN CODE</h3>
-              <p class="text-xl">Well-structured, maintainable implementation with responsive behavior.</p>
-            </div>
-            <div class="bg-pixel-blue-dark text-white border-4 border-black shadow-pixel p-6 text-center hover:bg-opacity-90 transition-colors">
-              <h3 class="font-pixel text-sm mb-4 text-white">PROBLEM SOLVING</h3>
-              <p class="text-xl">Debugging issues and implementing efficient solutions to improve functionality.</p>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <!-- CONTACT (GOALS & ANALYSIS Style) -->
-      <section id="contact" class="py-20 bg-pixel-blue-light relative">
-        <div class="max-w-4xl mx-auto px-6">
-          <div class="flex flex-col md:flex-row gap-12 items-center justify-center">
-            
-            <!-- Gameboy style contact card -->
-            <div class="w-full max-w-sm bg-[#ff9ce2] border-4 border-black p-4 shadow-pixel rounded-t-xl rounded-b-[40px] text-center">
-              <div class="bg-gray-200 border-4 border-black border-b-[8px] border-r-[8px] p-2 mb-6 rounded-t shadow-inner">
-                <div class="bg-[#1f2824] border-4 border-black p-4 text-[#8fbc8f] font-pixel text-xs min-h-[120px] flex flex-col items-center justify-center relative overflow-hidden">
-                  <p class="mb-4 z-10 text-xl">LET'S WORK</p>
-                  <p class="animate-pulse z-10 text-2xl">TOGETHER!</p>
-                  <!-- scanline overlay -->
-                  <div class="absolute inset-0 bg-[linear-gradient(transparent_50%,rgba(0,0,0,0.2)_50%)] bg-[length:100%_4px] pointer-events-none"></div>
-                </div>
-              </div>
-              
-              <div class="flex justify-between px-4 pb-4">
-                <div class="flex flex-col gap-1 items-center justify-center w-12 h-12 bg-black rounded-full relative">
-                  <!-- D-PAD -->
-                  <div class="w-4 h-12 bg-gray-800 absolute"></div>
-                  <div class="w-12 h-4 bg-gray-800 absolute"></div>
-                </div>
-                <div class="flex gap-2 items-end">
-                  <a href="mailto:harigovindmankulam@gmail.com" class="w-10 h-10 bg-[#ffe500] border-4 border-black rounded-full shadow-[2px_2px_0_0_rgba(0,0,0,0.5)] active:translate-y-1 active:shadow-none flex justify-center items-center font-bold text-xl hover:bg-white transition-colors" title="Email Me">✉</a>
-                  <a href="https://github.com/Harigovind-2006" target="_blank" class="w-10 h-10 bg-pixel-blue-dark border-4 border-black rounded-full shadow-[2px_2px_0_0_rgba(0,0,0,0.5)] active:translate-y-1 active:shadow-none flex justify-center items-center font-bold text-xl text-white hover:bg-white hover:text-black transition-colors" title="GitHub">G</a>
-                </div>
-              </div>
-              
-              <!-- Buttons for socials -->
-              <div class="flex justify-center gap-4 mt-4 text-xs font-pixel">
-                <a href="https://www.linkedin.com/in/harigovind-m-64b628290/" target="_blank" class="bg-white border-2 border-black px-2 py-1 shadow-pixel-sm hover:-translate-y-1 transition-transform">LINKEDIN</a>
-                <a href="https://www.instagram.com/hari_govind45/" target="_blank" class="bg-white border-2 border-black px-2 py-1 shadow-pixel-sm hover:-translate-y-1 transition-transform">INSTAGRAM</a>
-              </div>
-            </div>
-
-            <div class="flex-1 text-center md:text-left">
-              <h2 class="font-pixel text-3xl text-pixel-blue-dark mb-6">CONTACT</h2>
-              <p class="text-2xl mb-8 leading-relaxed">
-                Collaboration is built on clear focus and reliable execution. Use this layout as a launch point for your own portfolio.
-              </p>
-              <a href="mailto:harigovindmankulam@gmail.com" class="inline-block bg-white border-4 border-black px-8 py-4 font-pixel text-xl shadow-pixel hover:translate-y-1 hover:shadow-pixel-sm transition-all text-black uppercase">
-                SEND MESSAGE
-              </a>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      <!-- Footer -->
-      <footer class="bg-black text-white py-6 border-t-8 border-pixel-purple text-center font-pixel text-xs">
-        <p>&copy; 2026 HARIGOVIND M. PIXEL PORTFOLIO.</p>
-      </footer>
+  <body>
+    <div class="desktop-icons" aria-label="Desktop shortcuts">
+      <a class="desktop-icon" href="#home-window">
+        <span class="icon-box computer"></span>
+        <span>My Profile</span>
+      </a>
+      <a class="desktop-icon" href="#work-window">
+        <span class="icon-box folder"></span>
+        <span>Work</span>
+      </a>
+      <a class="desktop-icon" href="#contact-window">
+        <span class="icon-box mail"></span>
+        <span>Contact</span>
+      </a>
+      <a class="desktop-icon" href="harigovind.pdf" target="_blank" rel="noreferrer">
+        <span class="icon-box file"></span>
+        <span>Resume.pdf</span>
+      </a>
     </div>
 
-    <!-- Retro cursor styles applied globally -->
-    <style>
+    <main class="desktop-shell">
+      <section class="window hero-window" id="home-window">
+        <div class="title-bar">
+          <div class="title-group">
+            <span class="title-led"></span>
+            <span>Home</span>
+          </div>
+          <div class="window-controls" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="menu-strip">
+          <span>File</span>
+          <span>Edit</span>
+          <span>View</span>
+          <span>Go</span>
+          <span>Help</span>
+        </div>
+        <div class="window-content hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Student Developer</p>
+            <h1>Harigovind M</h1>
+            <p class="lead">
+              I build responsive interfaces, clean frontends, and practical user experiences with a strong focus on clarity and execution.
+            </p>
+            <p>
+              I am a passionate student developer with a strong interest in creating attractive and functional websites. I enjoy learning new technologies, solving problems, and improving my skills through projects and practice.
+            </p>
+            <div class="hero-actions">
+              <a class="win-button primary" href="#about-window">Open Profile</a>
+              <a class="win-button" href="harigovind.pdf" target="_blank" rel="noreferrer">Open CV</a>
+            </div>
+            <dl class="status-grid">
+              <div>
+                <dt>Focus</dt>
+                <dd>Frontend Development</dd>
+              </div>
+              <div>
+                <dt>Stack</dt>
+                <dd>HTML, CSS, JavaScript, React</dd>
+              </div>
+              <div>
+                <dt>Status</dt>
+                <dd>Available for projects</dd>
+              </div>
+            </dl>
+          </div>
+          <div class="profile-panel">
+            <div class="portrait-frame">
+              <img src="image.png" alt="Harigovind portrait" />
+            </div>
+            <div class="info-card">
+              <p class="card-label">Quick Access</p>
+              <ul>
+                <li><span>Email</span><a href="mailto:harigovindmankulam@gmail.com">harigovindmankulam@gmail.com</a></li>
+                <li><span>GitHub</span><a href="https://github.com/Harigovind-2006" target="_blank" rel="noreferrer">Harigovind-2006</a></li>
+                <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/harigovind-m-64b628290/" target="_blank" rel="noreferrer">harigovind-m</a></li>
+                <li><span>Instagram</span><a href="https://www.instagram.com/hari_govind45/" target="_blank" rel="noreferrer">hari_govind45</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      .cloud {
-        /* simple blocky shapes to look like 8bit clouds */
-        position: absolute;
-        box-shadow: 
-          10px 10px 0 0 white,
-          20px 10px 0 0 white,
-          10px -10px 0 0 white,
-          -10px 10px 0 0 white,
-          -10px 0 0 0 white,
-          30px 10px 0 0 white,
-          30px 0 0 0 white;
-        background: white;
-      }
-      .cloud::after {
-        content: '';
-        position: absolute;
-        top: 0; left: 0; right: -30px; bottom: -10px;
-        border: 4px solid black;
-        z-index: -1;
-      }
-    </style>
+      <section class="columns">
+        <div class="window" id="about-window">
+          <div class="title-bar">
+            <div class="title-group">
+              <span class="title-led"></span>
+              <span>About Me</span>
+            </div>
+            <div class="window-controls" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="window-content section-content">
+            <div>
+              <p class="section-kicker">Profile</p>
+              <h2>Who I Am</h2>
+            </div>
+            <p>
+              I am a passionate developer focused on building responsive web applications using React. I enjoy solving problems and designing clean, intuitive interfaces.
+            </p>
+            <p>
+              My working style is disciplined, curious, and grounded in continuous improvement. I care about maintainable code, useful design, and shipping work that behaves well across devices.
+            </p>
+            <div class="inline-actions">
+              <a class="win-button primary" href="harigovind.pdf" download>Download CV</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="window" id="skills-window">
+          <div class="title-bar">
+            <div class="title-group">
+              <span class="title-led"></span>
+              <span>Skills</span>
+            </div>
+            <div class="window-controls" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="window-content">
+            <div class="section-heading">
+              <p class="section-kicker">Capabilities</p>
+              <h2>Core Stack</h2>
+            </div>
+            <div class="skills-grid">
+              <article class="skill-tile"><strong>98%</strong><span>HTML</span><small>Structure</small></article>
+              <article class="skill-tile"><strong>95%</strong><span>CSS & Tailwind</span><small>Styling</small></article>
+              <article class="skill-tile"><strong>90%</strong><span>JavaScript</span><small>Logic</small></article>
+              <article class="skill-tile"><strong>85%</strong><span>React.js</span><small>Framework</small></article>
+              <article class="skill-tile"><strong>80%</strong><span>C</span><small>Fundamentals</small></article>
+              <article class="skill-tile"><strong>92%</strong><span>Python</span><small>Backend & Scripting</small></article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="window wide-window" id="work-window">
+        <div class="title-bar">
+          <div class="title-group">
+            <span class="title-led"></span>
+            <span>Services</span>
+          </div>
+          <div class="window-controls" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="window-content">
+          <div class="section-heading">
+            <p class="section-kicker">What I Do</p>
+            <h2>Execution Areas</h2>
+          </div>
+          <div class="service-grid">
+            <article class="service-card accent-blue">
+              <h3>Frontend Development</h3>
+              <p>Building responsive and modern websites using HTML, CSS, JavaScript, and React with clean and maintainable code.</p>
+            </article>
+            <article class="service-card accent-sand">
+              <h3>Responsive Design</h3>
+              <p>Creating layouts that work smoothly across desktop, tablet, and mobile devices for a reliable user experience.</p>
+            </article>
+            <article class="service-card accent-green">
+              <h3>UI Development</h3>
+              <p>Developing attractive and user-friendly interfaces that make websites easy to use and visually clear.</p>
+            </article>
+            <article class="service-card accent-rose">
+              <h3>Fast Support</h3>
+              <p>Quick iteration, direct communication, and practical fixes to keep projects moving.</p>
+            </article>
+            <article class="service-card accent-silver">
+              <h3>Clean Code</h3>
+              <p>Well-structured implementation with maintainable patterns and responsive behavior.</p>
+            </article>
+            <article class="service-card accent-navy">
+              <h3>Problem Solving</h3>
+              <p>Debugging issues and implementing efficient solutions to improve functionality.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="columns bottom-grid">
+        <div class="window">
+          <div class="title-bar">
+            <div class="title-group">
+              <span class="title-led"></span>
+              <span>Contact</span>
+            </div>
+            <div class="window-controls" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="window-content section-content" id="contact-window">
+            <div>
+              <p class="section-kicker">Let's Work</p>
+              <h2>Reach Out</h2>
+            </div>
+            <p>
+              Collaboration works best with clear communication and reliable execution. If you need a frontend build, responsive page, or interface cleanup, contact me.
+            </p>
+            <div class="contact-list">
+              <a href="mailto:harigovindmankulam@gmail.com">harigovindmankulam@gmail.com</a>
+              <a href="https://github.com/Harigovind-2006" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="https://www.linkedin.com/in/harigovind-m-64b628290/" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a href="https://www.instagram.com/hari_govind45/" target="_blank" rel="noreferrer">Instagram</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="window">
+          <div class="title-bar">
+            <div class="title-group">
+              <span class="title-led"></span>
+              <span>Notes</span>
+            </div>
+            <div class="window-controls" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="window-content notes-panel">
+            <div class="sticky-note">
+              <p class="note-head">Current Direction</p>
+              <ul>
+                <li>Responsive UI work</li>
+                <li>React-based builds</li>
+                <li>Interface polish</li>
+                <li>Practical problem solving</li>
+              </ul>
+            </div>
+            <div class="system-box">
+              <span class="system-label">Portfolio Status</span>
+              <strong>Online</strong>
+              <p>Single-page desktop layout inspired by the Retro '98 reference, rebuilt with your content.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="taskbar">
+      <button class="start-button" type="button">Start</button>
+      <nav class="task-links" aria-label="Taskbar navigation">
+        <a href="#home-window">Home</a>
+        <a href="#about-window">About</a>
+        <a href="#skills-window">Skills</a>
+        <a href="#work-window">Services</a>
+        <a href="#contact-window">Contact</a>
+      </nav>
+      <div class="clock" id="clock">00:00 AM</div>
+    </footer>
+
     <script src="script.js"></script>
   </body>
 </html>

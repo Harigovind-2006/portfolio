@@ -1,9 +1,13 @@
-document.getElementById("downloadCV").addEventListener("click", function () {
-  const link = document.createElement("a");
-  link.href = "harigovind.pdf"; // your CV file name
-  link.download = "harigovind.pdf";
+function updateClock() {
+  const clock = document.getElementById("clock");
+  if (!clock) return;
 
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-});
+  const now = new Date();
+  clock.textContent = now.toLocaleTimeString([], {
+    hour: "numeric",
+    minute: "2-digit",
+  });
+}
+
+updateClock();
+setInterval(updateClock, 1000 * 30);
