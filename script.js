@@ -64,4 +64,32 @@ document.addEventListener('DOMContentLoaded', () => {
       heroContent.style.transform = 'translateY(0)';
     }, 200);
   }
+
+  // Contact Form Interactions
+  const contactForm = document.getElementById('contactForm');
+  if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const btn = contactForm.querySelector('.btn-submit');
+      const originalText = btn.innerHTML;
+      
+      // Loading State
+      btn.innerHTML = '<span>SENDING...</span> ⏳';
+      btn.style.opacity = '0.8';
+      
+      // Simulate network request
+      setTimeout(() => {
+        btn.innerHTML = '<span>MESSAGE SENT!</span> ✅';
+        btn.classList.add('success');
+        btn.style.opacity = '1';
+        contactForm.reset();
+        
+        // Reset after 3 seconds
+        setTimeout(() => {
+          btn.innerHTML = originalText;
+          btn.classList.remove('success');
+        }, 3000);
+      }, 1500);
+    });
+  }
 });
