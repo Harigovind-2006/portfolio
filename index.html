@@ -3,279 +3,295 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Harigovind M | Retro Desktop Portfolio</title>
+    <title>Harigovind M | Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Pixelify+Sans:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Bebas+Neue&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="desktop-icons" aria-label="Desktop shortcuts">
-      <a class="desktop-icon" href="#home-window">
-        <span class="icon-box computer"></span>
-        <span>My Profile</span>
-      </a>
-      <a class="desktop-icon" href="#work-window">
-        <span class="icon-box folder"></span>
-        <span>Work</span>
-      </a>
-      <a class="desktop-icon" href="#contact-window">
-        <span class="icon-box mail"></span>
-        <span>Contact</span>
-      </a>
-      <a class="desktop-icon" href="harigovind.pdf" target="_blank" rel="noreferrer">
-        <span class="icon-box file"></span>
-        <span>Resume.pdf</span>
-      </a>
+    <!-- Vertical Social Bar (Hero Only) -->
+    <div class="hero-socials">
+      <a href="#"><img src="icons8-github-48.png" alt="GitHub" /></a>
+      <a href="#"><img src="icons8-linkedin-48 (1).png" alt="LinkedIn" /></a>
+      <a href="#"><img src="icons8-instagram-48.png" alt="Instagram" /></a>
     </div>
 
-    <main class="desktop-shell">
-      <section class="window hero-window" id="home-window">
-        <div class="title-bar">
-          <div class="title-group">
-            <span class="title-led"></span>
-            <span>Home</span>
-          </div>
-          <div class="window-controls" aria-hidden="true">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+    <!-- Hero Section -->
+    <section class="section hero" id="home">
+      <div class="hero-left">
+        <div class="hero-content">
+          <p class="greeting">HI THERE!</p>
+          <h1>I'M <span class="highlight">HARIGOVIND</span></h1>
+          <p class="tagline">FRONTEND DEVELOPER / UI DESIGNER</p>
+          <p class="description">
+            I build responsive interfaces, clean frontends, and practical user experiences with a strong focus on clarity and execution.
+          </p>
+          <a href="#about" class="btn-hero">MORE ABOUT ME</a>
         </div>
-        <div class="menu-strip">
-          <span>File</span>
-          <span>Edit</span>
-          <span>View</span>
-          <span>Go</span>
-          <span>Help</span>
+      </div>
+      <div class="hero-right">
+        <img src="professional_portrait_1775109605265.png" alt="Harigovind portrait" class="hero-image" />
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="section about" id="about">
+      <aside class="sidebar">
+        <div class="sidebar-top">
+          <img src="image.png" alt="Profile" class="sidebar-pfp" />
         </div>
-        <div class="window-content hero-grid">
-          <div class="hero-copy">
-            <p class="eyebrow">Student Developer</p>
-            <h1>Harigovind M</h1>
-            <p class="lead">
-              I build responsive interfaces, clean frontends, and practical user experiences with a strong focus on clarity and execution.
-            </p>
+        <nav class="sidebar-nav">
+          <a href="#home">HOME</a>
+          <a href="#about" class="active">ABOUT ME</a>
+          <a href="#resume">RESUME</a>
+          <a href="#portfolio">PORTFOLIO</a>
+          <a href="#testimonials">TESTIMONIALS</a>
+          <a href="#contact">CONTACT</a>
+        </nav>
+      </aside>
+      <main class="content-area">
+        <div class="content-box">
+          <h2 class="section-title">ABOUT ME</h2>
+          <div class="about-intro">
+            <h3>I'm <span class="name-bold">Harigovind M</span>, Frontend Developer / UI Designer</h3>
             <p>
               I am a passionate student developer with a strong interest in creating attractive and functional websites. I enjoy learning new technologies, solving problems, and improving my skills through projects and practice.
             </p>
-            <div class="hero-actions">
-              <a class="win-button primary" href="#about-window">Open Profile</a>
-              <a class="win-button" href="harigovind.pdf" target="_blank" rel="noreferrer">Open CV</a>
-            </div>
-            <dl class="status-grid">
-              <div>
-                <dt>Focus</dt>
-                <dd>Frontend Development</dd>
-              </div>
-              <div>
-                <dt>Stack</dt>
-                <dd>HTML, CSS, JavaScript, React</dd>
-              </div>
-              <div>
-                <dt>Status</dt>
-                <dd>Available for projects</dd>
-              </div>
-            </dl>
           </div>
-          <div class="profile-panel">
-            <div class="portrait-frame">
-              <img src="image.png" alt="Harigovind portrait" />
+          <div class="stats-row">
+            <div class="stat-grid">
+              <div class="stat-item">
+                <span class="stat-num">2+</span>
+                <span class="stat-label">YEARS EXPERIENCE</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-num">20+</span>
+                <span class="stat-label">PROJECTS DONE</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-num">10+</span>
+                <span class="stat-label">HAPPY CLIENTS</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-num">500+</span>
+                <span class="stat-label">GITHUUB COMMITS</span>
+              </div>
             </div>
-            <div class="info-card">
-              <p class="card-label">Quick Access</p>
-              <ul>
-                <li><span>Email</span><a href="mailto:harigovindmankulam@gmail.com">harigovindmankulam@gmail.com</a></li>
-                <li><span>GitHub</span><a href="https://github.com/Harigovind-2006" target="_blank" rel="noreferrer">Harigovind-2006</a></li>
-                <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/harigovind-m-64b628290/" target="_blank" rel="noreferrer">harigovind-m</a></li>
-                <li><span>Instagram</span><a href="https://www.instagram.com/hari_govind45/" target="_blank" rel="noreferrer">hari_govind45</a></li>
+            <div class="what-i-do">
+              <h4 class="sub-title">What I Do!</h4>
+              <ul class="do-list">
+                <li>
+                  <div class="do-icon">🎨</div>
+                  <div class="do-info">
+                    <h5>Frontend Design</h5>
+                    <p>Clean, responsive, and interactive UI for modern web apps.</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="do-icon">📱</div>
+                  <div class="do-info">
+                    <h5>Mobile Ready</h5>
+                    <p>Every layout is optimized for all devices and screen sizes.</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="do-icon">⚡</div>
+                  <div class="do-info">
+                    <h5>Clean Code</h5>
+                    <p>Maintainable, scalable, and high-performance base code.</p>
+                  </div>
+                </li>
               </ul>
             </div>
           </div>
         </div>
-      </section>
+      </main>
+    </section>
 
-      <section class="columns">
-        <div class="window" id="about-window">
-          <div class="title-bar">
-            <div class="title-group">
-              <span class="title-led"></span>
-              <span>About Me</span>
+    <!-- Resume Section -->
+    <section class="section resume" id="resume">
+      <aside class="sidebar">
+        <div class="sidebar-top">
+          <img src="image.png" alt="Profile" class="sidebar-pfp" />
+        </div>
+        <nav class="sidebar-nav">
+          <a href="#home">HOME</a>
+          <a href="#about">ABOUT ME</a>
+          <a href="#resume" class="active">RESUME</a>
+          <a href="#portfolio">PORTFOLIO</a>
+          <a href="#testimonials">TESTIMONIALS</a>
+          <a href="#contact">CONTACT</a>
+        </nav>
+      </aside>
+      <main class="content-area">
+        <div class="content-box">
+          <h2 class="section-title">RESUME</h2>
+          <div class="resume-grid">
+            <div class="resume-col">
+              <h4 class="sub-title">Education</h4>
+              <div class="resume-item">
+                <p class="resume-date">2022 - PRESENT</p>
+                <h5>B.Tech in Computer Science</h5>
+                <p>Focusing on software development and interactive design systems.</p>
+              </div>
             </div>
-            <div class="window-controls" aria-hidden="true">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </div>
-          <div class="window-content section-content">
-            <div>
-              <p class="section-kicker">Profile</p>
-              <h2>Who I Am</h2>
-            </div>
-            <p>
-              I am a passionate developer focused on building responsive web applications using React. I enjoy solving problems and designing clean, intuitive interfaces.
-            </p>
-            <p>
-              My working style is disciplined, curious, and grounded in continuous improvement. I care about maintainable code, useful design, and shipping work that behaves well across devices.
-            </p>
-            <div class="inline-actions">
-              <a class="win-button primary" href="harigovind.pdf" download>Download CV</a>
+            <div class="resume-col">
+              <h4 class="sub-title">Experience</h4>
+              <div class="resume-item">
+                <p class="resume-date">2024</p>
+                <h5>Frontend Intern</h5>
+                <p>Contributed to building high-performance web applications using modern JavaScript frameworks.</p>
+              </div>
             </div>
           </div>
         </div>
+      </main>
+    </section>
 
-        <div class="window" id="skills-window">
-          <div class="title-bar">
-            <div class="title-group">
-              <span class="title-led"></span>
-              <span>Skills</span>
-            </div>
-            <div class="window-controls" aria-hidden="true">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
+    <!-- Portfolio Section -->
+    <section class="section portfolio" id="portfolio">
+      <aside class="sidebar">
+        <div class="sidebar-top">
+          <img src="image.png" alt="Profile" class="sidebar-pfp" />
+        </div>
+        <nav class="sidebar-nav">
+          <a href="#home">HOME</a>
+          <a href="#about">ABOUT ME</a>
+          <a href="#resume">RESUME</a>
+          <a href="#portfolio" class="active">PORTFOLIO</a>
+          <a href="#testimonials">TESTIMONIALS</a>
+          <a href="#contact">CONTACT</a>
+        </nav>
+      </aside>
+      <main class="content-area">
+        <div class="content-box">
+          <h2 class="section-title">PORTFOLIO</h2>
+          <div class="portfolio-tabs">
+            <button class="active">ALL</button>
+            <button>WEB DESIGN</button>
+            <button>MOBILE APPS</button>
           </div>
-          <div class="window-content">
-            <div class="section-heading">
-              <p class="section-kicker">Capabilities</p>
-              <h2>Core Stack</h2>
+          <div class="portfolio-grid">
+            <div class="project-card">
+              <img src="portfolio_projects_1775109626837.png" alt="Project 1" />
+              <div class="project-hover">
+                <h5>E-commerce Platform</h5>
+                <p>WEB DESIGN</p>
+              </div>
             </div>
-            <div class="skills-grid">
-              <article class="skill-tile"><strong>98%</strong><span>HTML</span><small>Structure</small></article>
-              <article class="skill-tile"><strong>95%</strong><span>CSS & Tailwind</span><small>Styling</small></article>
-              <article class="skill-tile"><strong>90%</strong><span>JavaScript</span><small>Logic</small></article>
-              <article class="skill-tile"><strong>85%</strong><span>React.js</span><small>Framework</small></article>
-              <article class="skill-tile"><strong>80%</strong><span>C</span><small>Fundamentals</small></article>
-              <article class="skill-tile"><strong>92%</strong><span>Python</span><small>Backend & Scripting</small></article>
+            <div class="project-card">
+              <img src="portfolio_projects_1775109626837.png" alt="Project 2" />
+              <div class="project-hover">
+                <h5>Social Dashboard</h5>
+                <p>WEB DESIGN</p>
+              </div>
+            </div>
+            <div class="project-card">
+              <img src="portfolio_projects_1775109626837.png" alt="Project 3" />
+              <div class="project-hover">
+                <h5>Mobile Wallet</h5>
+                <p>MOBILE APPS</p>
+              </div>
+            </div>
+            <div class="project-card">
+              <img src="portfolio_projects_1775109626837.png" alt="Project 4" />
+              <div class="project-hover">
+                <h5>AI Portfolio</h5>
+                <p>MOBILE APPS</p>
+              </div>
             </div>
           </div>
         </div>
-      </section>
+      </main>
+    </section>
 
-      <section class="window wide-window" id="work-window">
-        <div class="title-bar">
-          <div class="title-group">
-            <span class="title-led"></span>
-            <span>Services</span>
-          </div>
-          <div class="window-controls" aria-hidden="true">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+    <!-- Testimonials Section -->
+    <section class="section testimonials" id="testimonials">
+      <aside class="sidebar">
+        <div class="sidebar-top">
+          <img src="image.png" alt="Profile" class="sidebar-pfp" />
         </div>
-        <div class="window-content">
-          <div class="section-heading">
-            <p class="section-kicker">What I Do</p>
-            <h2>Execution Areas</h2>
-          </div>
-          <div class="service-grid">
-            <article class="service-card accent-blue">
-              <h3>Frontend Development</h3>
-              <p>Building responsive and modern websites using HTML, CSS, JavaScript, and React with clean and maintainable code.</p>
-            </article>
-            <article class="service-card accent-sand">
-              <h3>Responsive Design</h3>
-              <p>Creating layouts that work smoothly across desktop, tablet, and mobile devices for a reliable user experience.</p>
-            </article>
-            <article class="service-card accent-green">
-              <h3>UI Development</h3>
-              <p>Developing attractive and user-friendly interfaces that make websites easy to use and visually clear.</p>
-            </article>
-            <article class="service-card accent-rose">
-              <h3>Fast Support</h3>
-              <p>Quick iteration, direct communication, and practical fixes to keep projects moving.</p>
-            </article>
-            <article class="service-card accent-silver">
-              <h3>Clean Code</h3>
-              <p>Well-structured implementation with maintainable patterns and responsive behavior.</p>
-            </article>
-            <article class="service-card accent-navy">
-              <h3>Problem Solving</h3>
-              <p>Debugging issues and implementing efficient solutions to improve functionality.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="columns bottom-grid">
-        <div class="window">
-          <div class="title-bar">
-            <div class="title-group">
-              <span class="title-led"></span>
-              <span>Contact</span>
+        <nav class="sidebar-nav">
+          <a href="#home">HOME</a>
+          <a href="#about">ABOUT ME</a>
+          <a href="#resume">RESUME</a>
+          <a href="#portfolio">PORTFOLIO</a>
+          <a href="#testimonials" class="active">TESTIMONIALS</a>
+          <a href="#contact">CONTACT</a>
+        </nav>
+      </aside>
+      <main class="content-area">
+        <div class="content-box">
+          <h2 class="section-title">TESTIMONIALS</h2>
+          <div class="testimonial-grid">
+            <div class="testimonial-card">
+              <p>"Excellent work! Harigovind is a talented developer who delivers high-quality code and beautiful designs."</p>
+              <div class="client-info">
+                <img src="icons8-github-48.png" alt="Client" />
+                <h5>John Smith</h5>
+                <p>Tech Lead, ABC Inc.</p>
+              </div>
             </div>
-            <div class="window-controls" aria-hidden="true">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </div>
-          <div class="window-content section-content" id="contact-window">
-            <div>
-              <p class="section-kicker">Let's Work</p>
-              <h2>Reach Out</h2>
-            </div>
-            <p>
-              Collaboration works best with clear communication and reliable execution. If you need a frontend build, responsive page, or interface cleanup, contact me.
-            </p>
-            <div class="contact-list">
-              <a href="mailto:harigovindmankulam@gmail.com">harigovindmankulam@gmail.com</a>
-              <a href="https://github.com/Harigovind-2006" target="_blank" rel="noreferrer">GitHub</a>
-              <a href="https://www.linkedin.com/in/harigovind-m-64b628290/" target="_blank" rel="noreferrer">LinkedIn</a>
-              <a href="https://www.instagram.com/hari_govind45/" target="_blank" rel="noreferrer">Instagram</a>
+            <div class="testimonial-card">
+              <p>"Prompt communication and great results. Highly recommend for any frontend project."</p>
+              <div class="client-info">
+                <img src="icons8-linkedin-48 (1).png" alt="Client" />
+                <h5>Sarah Wilson</h5>
+                <p>Product Designer</p>
+              </div>
             </div>
           </div>
         </div>
+      </main>
+    </section>
 
-        <div class="window">
-          <div class="title-bar">
-            <div class="title-group">
-              <span class="title-led"></span>
-              <span>Notes</span>
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+      <aside class="sidebar">
+        <div class="sidebar-top">
+          <img src="image.png" alt="Profile" class="sidebar-pfp" />
+        </div>
+        <nav class="sidebar-nav">
+          <a href="#home">HOME</a>
+          <a href="#about">ABOUT ME</a>
+          <a href="#resume">RESUME</a>
+          <a href="#portfolio">PORTFOLIO</a>
+          <a href="#testimonials">TESTIMONIALS</a>
+          <a href="#contact" class="active">CONTACT</a>
+        </nav>
+      </aside>
+      <main class="content-area">
+        <div class="content-box">
+          <h2 class="section-title">CONTACT</h2>
+          <div class="contact-container">
+            <p class="feel-free">Feel <span class="highlight">free</span> to contact me!</p>
+            <div class="contact-info">
+              <div class="contact-item">
+                <span class="icon">📧</span>
+                <p>harigovindmankulam@gmail.com</p>
+              </div>
+              <div class="contact-item">
+                <span class="icon">🔗</span>
+                <p>linkedin.com/in/harigovind-m</p>
+              </div>
             </div>
-            <div class="window-controls" aria-hidden="true">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </div>
-          <div class="window-content notes-panel">
-            <div class="sticky-note">
-              <p class="note-head">Current Direction</p>
-              <ul>
-                <li>Responsive UI work</li>
-                <li>React-based builds</li>
-                <li>Interface polish</li>
-                <li>Practical problem solving</li>
-              </ul>
-            </div>
-            <div class="system-box">
-              <span class="system-label">Portfolio Status</span>
-              <strong>Online</strong>
-              <p>Single-page desktop layout inspired by the Retro '98 reference, rebuilt with your content.</p>
-            </div>
+            <p class="thanks-msg">THANKS FOR PATIENCE!</p>
           </div>
         </div>
-      </section>
-    </main>
+      </main>
+    </section>
 
-    <footer class="taskbar">
-      <button class="start-button" type="button">Start</button>
-      <nav class="task-links" aria-label="Taskbar navigation">
-        <a href="#home-window">Home</a>
-        <a href="#about-window">About</a>
-        <a href="#skills-window">Skills</a>
-        <a href="#work-window">Services</a>
-        <a href="#contact-window">Contact</a>
-      </nav>
-      <div class="clock" id="clock">00:00 AM</div>
-    </footer>
+    <!-- Floating Navigation Bar (Mobile / General Shortcut) -->
+    <nav class="mobile-nav">
+      <a href="#home">🏠</a>
+      <a href="#about">👤</a>
+      <a href="#portfolio">💼</a>
+      <a href="#contact">✉️</a>
+    </nav>
 
     <script src="script.js"></script>
   </body>
