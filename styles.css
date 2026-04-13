@@ -1,8 +1,8 @@
 :root {
   --primary-yellow: #ffb400;
-  --secondary-bg: #0a0a0a;
+  --secondary-bg: #000000;
   --dark: #000000;
-  --white: #111111;
+  --white: #000000;
   --text-grey: #aaaaaa;
   --text-main: #ffffff;
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -15,6 +15,7 @@
   box-sizing: border-box;
   font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   scroll-behavior: smooth;
+  cursor: none;
 }
 
 body {
@@ -22,6 +23,37 @@ body {
   color: var(--text-main);
   overflow-x: hidden;
   perspective: 1200px;
+}
+
+/* Custom Cursor */
+.cursor-dot,
+.cursor-outline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 99999;
+  pointer-events: none;
+}
+
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--primary-yellow);
+}
+
+.cursor-outline {
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgba(255, 180, 0, 0.5);
+  transition: width 0.2s ease, height 0.2s ease, background-color 0.2s ease;
+}
+
+.cursor-outline.cursor-hover {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(255, 180, 0, 0.1);
 }
 
 img {

@@ -132,4 +132,35 @@ document.addEventListener('DOMContentLoaded', () => {
       loader.style.visibility = 'hidden';
     }, 2000);
   }
+
+  // --- Custom Cursor Logic ---
+  const cursorDot = document.querySelector('.cursor-dot');
+  const cursorOutline = document.querySelector('.cursor-outline');
+
+  if (cursorDot && cursorOutline) {
+    window.addEventListener('mousemove', function (e) {
+      const posX = e.clientX;
+      const posY = e.clientY;
+
+      cursorDot.style.left = `${posX}px`;
+      cursorDot.style.top = `${posY}px`;
+
+      // Use Element.animate for smooth trailing effect
+      cursorOutline.animate({
+        left: `${posX}px`,
+        top: `${posY}px`
+      }, { duration: 500, fill: "forwards" });
+    });
+
+    // Add hover effects for clickable items
+    const clickables = document.querySelectorAll('a, button, input, textarea, .project-card, .contact-card');
+    clickables.forEach((el) => {
+      el.addEventListener('mouseenter', () => {
+        cursorOutline.classList.add('cursor-hover');
+      });
+      el.addEventListener('mouseleave', () => {
+        cursorOutline.classList.remove('cursor-hover');
+      });
+    });
+  }
 });
