@@ -385,6 +385,14 @@ a {
   margin-bottom: 5px;
 }
 
+.project-desc {
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 0 15px;
+  margin-top: 10px;
+  color: var(--dark);
+}
+
 /* --- RESUME --- */
 .resume-download {
   text-align: center;
