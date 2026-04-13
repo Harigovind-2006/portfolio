@@ -80,7 +80,7 @@ a {
   align-items: center;
   justify-content: center;
   padding: 80px;
-  background: var(--white);
+  background: transparent;
 }
 
 .hero-right {
@@ -241,7 +241,7 @@ a {
 
 .content-area {
   flex: 1;
-  background: var(--secondary-bg);
+  background: transparent;
   padding: 80px;
   display: flex;
   align-items: center;
@@ -824,4 +824,15 @@ a {
   0% { transform: perspective(800px) rotateX(0deg) rotateY(0deg) translateZ(0) translateY(0); }
   50% { transform: perspective(800px) rotateX(-180deg) rotateY(-90deg) translateZ(150px) translateY(-50px); }
   100% { transform: perspective(800px) rotateX(-360deg) rotateY(-360deg) translateZ(0) translateY(0); }
+}
+
+/* --- Three.js Background --- */
+#bg-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none;
 }
